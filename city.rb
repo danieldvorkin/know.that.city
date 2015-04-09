@@ -10,6 +10,8 @@ class PresentDay
 		@full_name = gets.to_s
 		puts "Enter your age: "
 		@age = gets.to_i
+		puts "What part of the city do you live in?"
+		@part = gets.to_s
 	end
 
 	def display
@@ -23,4 +25,10 @@ end
 user1 = PresentDay.new("Toronto")
 user1.user_input
 user1.display
+
+puts "Let's begin our phase 1 of testing?"
+puts "Press Enter to continue"
+gets
+
+
 
