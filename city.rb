@@ -12,12 +12,16 @@ class PresentDay
 		@age = gets.to_i
 		puts "What part of the city do you live in?"
 		@part = gets.to_s
+		puts "Whats something you want to learn more about"
+		@needs_and_wants = gets.to_s
 	end
 
 	def display
-		puts "Name: #{@full_name}"
-		puts "Age: #{@age}"
-		puts "Currently living in #{@city}"
+		puts
+		puts "Name			: #{@full_name}"
+		puts "Age			: #{@age}"
+		puts "Currently living in	: #{@city}"
+		puts "Your current interest for learning more about your city's #{@needs_and_wants}"
 	end
 end
 
